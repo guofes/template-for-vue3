@@ -4,10 +4,10 @@
       <div class="w-52 h-52 mx-auto mb-4"><vitecamp class="w-52 h-52"></vitecamp></div>
     </div>
     <div class="text-center text-md">
-      <h1 class="font-serif font-bold text-4xl mb-8">{{ t('hello') }} , {{ t('welcome to') }} Vitecamp</h1>
+      <!-- <h1 class="font-serif font-bold text-4xl mb-8">{{ t('hello') }} , {{ t('welcome to') }} Vitecamp</h1> -->
       <p class="mb-10">
         <strong>Vitecamp</strong>
-        {{ t('includes features') }}
+        <!-- {{ t('includes features') }} -->
       </p>
       <p class="mb-10">
         <template v-for="(item, index) in featureList" :key="index">
@@ -15,7 +15,7 @@
           <template v-if="!item.isEnd"> | </template>
         </template>
       </p>
-      <div>{{ t('before coding') }} , {{ t('setup ide') }} <strong>VSCode</strong> + <strong>Volar</strong></div>
+      <!-- <div>{{ t('before coding') }} , {{ t('setup ide') }} <strong>VSCode</strong> + <strong>Volar</strong></div> -->
     </div>
   </div>
 </template>
@@ -23,7 +23,7 @@
 <script setup lang="ts">
 import vitecamp from '@/assets/svg/vitecamp.svg?component';
 
-const { t } = useI18n();
+// const { t } = useI18n();
 ElMessage.info({ message: 'welcome', duration: 1 });
 ElNotification({
   title: 'Issue',
